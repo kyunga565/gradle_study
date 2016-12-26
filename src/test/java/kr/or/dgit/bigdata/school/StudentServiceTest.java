@@ -39,18 +39,18 @@ public class StudentServiceTest {
 		Assert.assertNotNull(std);
 	}
 	
-/*	@Test
+	/*	@Test
 	public void testInsertItem(){
 		Calendar cal = Calendar.getInstance();
 		cal.set(2000, 01, 01);
-		// 0 -> 1¿ù  , 1 -> 2¿ù
-		Student insStd = new Student(5, "°­º¸¹Ì3","kbm@test.com", cal.getTime());
+		// 0 -> 1ì›”  , 1 -> 2ì›”
+		Student insStd = new Student(5, "ê°•ë³´ë¯¸3","kbm@test.com", cal.getTime());
 		studentservice.insertItem(insStd);
 		
 		List<Student> list = studentservice.findAllStudent();
 		
 		Assert.assertEquals(5, list.size());
-		//ÇöÀç °øÀ¯ ±è»çºÎ=>2¸íÀÎµ¥ °­º¸¹Ì³Ö¾î¼­ ¸¸¾à3ÀÌ¶ó¸é ÀÔ·ÂµÈ°Å
+		//í˜„ì¬ ê³µìœ  ê¹€ì‚¬ë¶€=>2ëª…ì¸ë° ê°•ë³´ë¯¸ë„£ì–´ì„œ ë§Œì•½3ì´ë¼ë©´ ì…ë ¥ëœê±°
 	}
 */	
 /*	@Test
@@ -66,13 +66,12 @@ public class StudentServiceTest {
 		cal.clear();
 		cal.set(2000, 00, 01);
 		
-		Student update = new Student(3,"ÀÌÀ¯Áø2","lyj@test.com",cal.getTime()); 
+		Student update = new Student(3,"ì´ìœ ì§„2","lyj@test.com",cal.getTime()); 
 		
 		studentservice.updateItem(update);
 		
 		Student selectItem = studentservice.selectByNo(3);
 		Assert.assertEquals(selectItem, update);
 	}
-	
 	
 }
