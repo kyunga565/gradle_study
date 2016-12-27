@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import kr.or.dgit.bigdata.school.dto.PhoneNumber;
 import kr.or.dgit.bigdata.school.dto.Student;
 import kr.or.dgit.bigdata.school.service.StudentService;
 
@@ -44,7 +45,7 @@ public class StudentServiceTest {
 		Calendar cal = Calendar.getInstance();
 		cal.set(2000, 01, 01);
 		// 0 -> 1월  , 1 -> 2월
-		Student insStd = new Student(5, "강보미3","kbm@test.com", cal.getTime());
+		Student insStd = new Student(7, "강보미5","kbm@test.com", cal.getTime(),new PhoneNumber("010-1111-1234"));
 		studentservice.insertItem(insStd);
 		
 		List<Student> list = studentservice.findAllStudent();
@@ -66,7 +67,7 @@ public class StudentServiceTest {
 		cal.clear();
 		cal.set(2000, 00, 01);
 		
-		Student update = new Student(3,"이유진2","lyj@test.com",cal.getTime()); 
+		Student update = new Student(3,"이유진2","lyj@test.com",cal.getTime(),new PhoneNumber("010-2222-1111")); 
 		
 		studentservice.updateItem(update);
 		

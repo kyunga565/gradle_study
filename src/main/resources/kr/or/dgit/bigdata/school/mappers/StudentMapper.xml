@@ -21,7 +21,7 @@
 	</select>
 	
 	<insert id="insertItem" parameterType="Student">
-		insert into student values(#{studId}, #{name}, #{email}, #{dob})
+		insert into student values(#{studId}, #{name}, #{email}, #{dob}, #{phone})
 	</insert>
 	
 	<delete id="deleteItem" parameterType="int">
@@ -29,6 +29,6 @@
 	</delete>
 	
 	<update id="updateItem" parameterType="Student">
-		update student set name=#{name}, email=#{email},dob=#{dob} where stud_id = #{studId}
+		update student set name=#{name}, email=#{email},dob=#{dob},phone=#{phone} where stud_id = #{studId}
 	</update>
 </mapper>
