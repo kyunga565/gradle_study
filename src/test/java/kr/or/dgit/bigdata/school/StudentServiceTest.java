@@ -39,7 +39,7 @@ public class StudentServiceTest {
 		Assert.assertNotNull(std);
 	}
 	
-	/*	@Test
+	@Test
 	public void testInsertItem(){
 		Calendar cal = Calendar.getInstance();
 		cal.set(2000, 01, 01);
@@ -52,14 +52,14 @@ public class StudentServiceTest {
 		Assert.assertEquals(5, list.size());
 		//현재 공유 김사부=>2명인데 강보미넣어서 만약3이라면 입력된거
 	}
-*/	
-/*	@Test
+	
+	@Test
 	public void testDeleteItem(){
 		studentservice.deleteItem(2);
 		
 		Student std = studentservice.selectByNo(1);
 		Assert.assertNull(std);
-	}*/
+	}
 	@Test
 	public void testUpdateItem(){
 		Calendar cal = Calendar.getInstance();
